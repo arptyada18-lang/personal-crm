@@ -108,7 +108,7 @@
   };
 
   window.deleteSnapshot=function(snapshotId){
-    state.snapshots=(state.snapshots||[]).filter(function(x){return x.id!==snapshotId);
+    state.snapshots=(state.snapshots||[]).filter(function(x){return x.id!==snapshotId});
     baseSaveV7();render();toast("Snapshot deleted");
   };
 
