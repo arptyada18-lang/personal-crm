@@ -105,6 +105,26 @@ Advanced privacy-first personal relationship and networking CRM.
 - Dashboard daily networking mission
 - Badge and goal state migration while preserving V1–V5 data
 
+## V7 — implemented
+- Progressive Web App manifest
+- Installable app foundation
+- Offline service worker cache
+- Standalone app mode support
+- Daily automatic local recovery snapshot
+- Manual recovery snapshots
+- Five-snapshot retention limit
+- Snapshot restore and delete controls
+- Separate last-known-good validated copy
+- Emergency last-known-good restore
+- Local CRM structural validation
+- Non-destructive structural repair
+- Orphan-reference warnings
+- Recovery bundle export
+- Data size and record health metrics
+- Dashboard reliability status
+- Settings recovery center
+- V7 state migration while preserving V1–V6 LocalStorage data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -120,7 +140,6 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - LocalStorage
 
 ## Roadmap
-- V7: PWA, snapshots, backup and recovery
 - V8: Network map, advanced reports and final release polish
 
 ## Run
