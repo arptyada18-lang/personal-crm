@@ -22,6 +22,10 @@
     {id:"closer",name:"Closer",icon:"W",desc:"Win the first opportunity.",test:function(){return wonOpportunities()>=1}}
   ];
 
+  function dateKeyV6(value){
+    return value?String(value).slice(0,10):"";
+  }
+
   function ensureV6(){
     state.schemaVersion=V6_VERSION;
     state.networkingGoals=Array.isArray(state.networkingGoals)?state.networkingGoals:[];
@@ -151,7 +155,7 @@
 
   function badgeHtml(b){
     const earned=state.earnedBadges.find(function(x){return x.id===b.id});
-    return '<div class="badge-card '+(earned?'earned':'locked')+'"><div class="badge-icon">'+esc(b.icon)+'</div><div><strong>'+esc(b.name)+'</strong><p>'+esc(b.desc)+'</p><small>'+(earned?'Unlocked '+dateKey(earned.earnedAt):'Locked')+'</small></div></div>';
+    return '<div class="badge-card '+(earned?'earned':'locked')+'"><div class="badge-icon">'+esc(b.icon)+'</div><div><strong>'+esc(b.name)+'</strong><p>'+esc(b.desc)+'</p><small>'+(earned?'Unlocked '+dateKeyV6(earned.earnedAt):'Locked')+'</small></div></div>';
   }
 
   function smartActions(){
@@ -239,7 +243,7 @@
     const c=contactById(cid),before=c?.stage;
     moveContactStageV6Base(cid,next);
     if(c&&before!==c.stage){
-      awardXP(3,"Pipeline progress: "+c.name,"stage:"+c.id+":"+c.stage+":"+dateKey(c.stageUpdatedAt));
+      awardXP(3,"Pipeline progress: "+c.name,"stage:"+c.id+":"+c.stage+":"+dateKeyV6(c.stageUpdatedAt));
       refreshGamification(true);save();render();
     }
   };
