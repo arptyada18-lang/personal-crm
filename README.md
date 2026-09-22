@@ -172,7 +172,5 @@ Core local-first Personal CRM feature set is implemented through V8.
 - Optional AI relationship assistant with explicit API-cost controls
 - Team / mentor sharing
 
-## Roadmap
-
 ## Run
 Open `index.html` locally or deploy the repository with GitHub Pages.
