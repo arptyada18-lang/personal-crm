@@ -26,6 +26,25 @@
     try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){}
   };
 
+  const restoreSnapshotV8Base=window.restoreSnapshot;
+  window.restoreSnapshot=function(snapshotId){
+    restoreSnapshotV8Base(snapshotId);
+    state.schemaVersion=V8_VERSION;
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){}
+  };
+  const restoreLastGoodV8Base=window.restoreLastGood;
+  window.restoreLastGood=function(){
+    restoreLastGoodV8Base();
+    state.schemaVersion=V8_VERSION;
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){}
+  };
+  const repairCRMDataV8Base=window.repairCRMData;
+  window.repairCRMData=function(){
+    repairCRMDataV8Base();
+    state.schemaVersion=V8_VERSION;
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){}
+  };
+
   function ensureV8(){
     state.schemaVersion=V8_VERSION;
     state.reviews=Array.isArray(state.reviews)?state.reviews:[];
