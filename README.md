@@ -52,6 +52,24 @@ Advanced privacy-first personal relationship and networking CRM.
 - Pipeline activity logging
 - V3 state migration while preserving V1/V2 LocalStorage data
 
+## V4 — implemented
+- Contact-linked opportunity tracking
+- Opportunity types for internships, freelance clients, jobs, collaborations, mentorship, projects, sponsorships and referrals
+- Opportunity status workflow and editing
+- Estimated value and deadline tracking
+- Opportunity risk / deadline badges
+- Opportunity board grouped by status
+- Opportunity analytics and win-rate snapshot
+- Important Dates center
+- Meetings, birthdays, anniversaries, events, deadlines, reminders and custom dates
+- Yearly recurring important dates
+- Automatic birthdays generated from contact profiles
+- Upcoming date timeline and 7/30-day readiness metrics
+- Dashboard opportunity radar
+- Dashboard important-date alerts
+- Contact profile opportunity and important-date panels
+- V4 state migration while preserving V1–V3 LocalStorage data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -67,7 +85,6 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - LocalStorage
 
 ## Roadmap
-- V4: Opportunities and important dates
 - V5: Analytics and networking heatmap
 - V6: Smart suggestions, XP and badges
 - V7: PWA, snapshots, backup and recovery
