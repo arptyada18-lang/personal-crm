@@ -70,6 +70,23 @@ Advanced privacy-first personal relationship and networking CRM.
 - Contact profile opportunity and important-date panels
 - V4 state migration while preserving V1–V3 LocalStorage data
 
+## V5 — implemented
+- Advanced networking analytics dashboard
+- 84-day networking activity heatmap
+- 28-day dashboard mini heatmap
+- 8-week activity trend
+- Six-month contact growth trend
+- Relationship-health distribution
+- Networking pipeline stage distribution
+- Interaction-channel breakdown
+- Opportunity outcome distribution
+- Follow-up completion / open / overdue analytics
+- Seven-day networking momentum comparison
+- Top active contacts
+- Rule-based analytics insights
+- Recorded-data-only historical analytics with no fabricated old history
+- V5 state migration while preserving V1–V4 LocalStorage data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -85,7 +102,6 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - LocalStorage
 
 ## Roadmap
-- V5: Analytics and networking heatmap
 - V6: Smart suggestions, XP and badges
 - V7: PWA, snapshots, backup and recovery
 - V8: Network map, advanced reports and final release polish
