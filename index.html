@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
   <div class="app-shell">
     <aside class="sidebar" id="sidebar">
       <div class="brand">
@@ -27,6 +28,8 @@
         <button class="nav-item" data-view="interactions">◫ <span>Interactions</span></button>
         <button class="nav-item" data-view="analytics">⌁ <span>Analytics</span></button>
         <button class="nav-item" data-view="growth">★ <span>Growth & Goals</span></button>
+        <button class="nav-item" data-view="network">◉ <span>Network Map</span></button>
+        <button class="nav-item" data-view="reports">▦ <span>Reports & Reviews</span></button>
         <button class="nav-item" data-view="settings">⚙ <span>Settings</span></button>
       </nav>
       <div class="sidebar-foot">
@@ -34,7 +37,7 @@
       </div>
     </aside>
 
-    <main class="main">
+    <main class="main" id="mainContent" tabindex="-1">
       <header class="topbar">
         <div class="top-left">
           <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
@@ -73,5 +76,6 @@
   <script src="v5.js"></script>
   <script src="v6.js"></script>
   <script src="v7.js"></script>
+  <script src="v8.js"></script>
 </body>
 </html>
