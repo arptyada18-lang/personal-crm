@@ -19,6 +19,13 @@
   let networkFilter="All";
   let reportPeriod="weekly";
 
+  const baseSaveV8=save;
+  save=function(){
+    baseSaveV8();
+    state.schemaVersion=V8_VERSION;
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}catch(e){}
+  };
+
   function ensureV8(){
     state.schemaVersion=V8_VERSION;
     state.reviews=Array.isArray(state.reviews)?state.reviews:[];
