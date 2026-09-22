@@ -87,6 +87,24 @@ Advanced privacy-first personal relationship and networking CRM.
 - Recorded-data-only historical analytics with no fabricated old history
 - V5 state migration while preserving V1–V4 LocalStorage data
 
+## V6 — implemented
+- Growth & Goals center
+- Rule-based smart networking actions
+- Daily networking mission
+- Measurable networking goals with progress tracking
+- Goal metrics for contacts, interactions, completed follow-ups, strong relationships, strong connections and won opportunities
+- Automatic goal completion
+- +50 XP reward for completed goals
+- XP level system
+- XP history
+- Pipeline-stage XP rewards
+- Won-opportunity XP rewards
+- Ten one-time achievement badges
+- +20 XP badge rewards
+- Dashboard level / XP card
+- Dashboard daily networking mission
+- Badge and goal state migration while preserving V1–V5 data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -102,7 +120,6 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - LocalStorage
 
 ## Roadmap
-- V6: Smart suggestions, XP and badges
 - V7: PWA, snapshots, backup and recovery
 - V8: Network map, advanced reports and final release polish
 
