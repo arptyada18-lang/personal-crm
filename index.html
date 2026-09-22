@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-theme="midnight">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <title>Personal CRM</title>
+  <meta name="description" content="Privacy-first personal relationship and networking CRM.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">PR</div>
+        <div><strong>Personal CRM</strong><span>Build better relationships</span></div>
+      </div>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <button class="nav-item active" data-view="dashboard">◈ <span>Dashboard</span></button>
+        <button class="nav-item" data-view="contacts">◎ <span>Contacts</span></button>
+        <button class="nav-item" data-view="followups">↻ <span>Follow-Ups</span></button>
+        <button class="nav-item" data-view="interactions">◫ <span>Interactions</span></button>
+        <button class="nav-item" data-view="analytics">⌁ <span>Analytics</span></button>
+        <button class="nav-item" data-view="settings">⚙ <span>Settings</span></button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="privacy-chip">Local-first • Private</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="top-left">
+          <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+          <div><p class="eyebrow" id="todayLabel"></p><h1 id="viewTitle">Command Center</h1></div>
+        </div>
+        <div class="top-actions">
+          <label class="search"><span>⌕</span><input id="globalSearch" placeholder="Search people, company, tags..."></label>
+          <button class="btn ghost" id="quickInteractionBtn">＋ Interaction</button>
+          <button class="btn primary" id="addContactBtn">＋ Contact</button>
+        </div>
+      </header>
+      <section id="viewRoot" class="view-root"></section>
+    </main>
+  </div>
+
+  <div class="mobile-nav">
+    <button data-view="dashboard" class="active">◈<span>Home</span></button>
+    <button data-view="contacts">◎<span>Contacts</span></button>
+    <button data-view="followups">↻<span>Follow-Ups</span></button>
+    <button data-view="analytics">⌁<span>Stats</span></button>
+  </div>
+
+  <dialog id="modal" class="modal">
+    <form method="dialog" class="modal-card" id="modalForm">
+      <div class="modal-head"><div><p class="eyebrow" id="modalEyebrow">Personal CRM</p><h2 id="modalTitle"></h2></div><button class="icon-btn" value="cancel">×</button></div>
+      <div id="modalBody" class="modal-body"></div>
+      <div class="modal-actions"><button class="btn ghost" value="cancel">Cancel</button><button class="btn primary" id="modalSave" value="default">Save</button></div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
