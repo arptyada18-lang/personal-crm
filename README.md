@@ -23,6 +23,21 @@ Advanced privacy-first personal relationship and networking CRM.
 - Dark premium interface
 - Privacy-first architecture
 
+## V2 — implemented
+- Edit and delete interactions
+- Rich interaction details with outcome and next step
+- Unified per-contact relationship timeline
+- Follow-up edit, delete and completion controls
+- One-day and seven-day follow-up snooze
+- Follow-up rescheduling
+- Completed follow-up history
+- Smart follow-up dashboard metrics
+- Rule-based relationship intelligence
+- Attention recommendations for dormant / cooling relationships
+- High-priority relationship warnings
+- Automatic last-interaction recalculation after edits/deletes
+- V2 state migration without losing V1 LocalStorage data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -38,7 +53,6 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - LocalStorage
 
 ## Roadmap
-- V2: Smart follow-ups, richer timeline, edit/delete interactions, snooze/reschedule
 - V3: Networking Kanban pipeline
 - V4: Opportunities and important dates
 - V5: Analytics and networking heatmap
