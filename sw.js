@@ -1,4 +1,4 @@
-const CACHE="personal-crm-v7";
+const CACHE="personal-crm-v8";
 const ASSETS=[
   "./",
   "./index.html",
@@ -10,6 +10,7 @@ const ASSETS=[
   "./v5.js",
   "./v6.js",
   "./v7.js",
+  "./v8.js",
   "./manifest.json",
   "./icon.svg"
 ];
