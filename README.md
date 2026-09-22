@@ -125,6 +125,29 @@ Advanced privacy-first personal relationship and networking CRM.
 - Settings recovery center
 - V7 state migration while preserving V1–V6 LocalStorage data
 
+## V8 — implemented
+- Local SVG relationship network map
+- Relationship-type network filtering
+- Clickable / keyboard-accessible contact nodes
+- Weekly and monthly CRM reports
+- Recorded-activity report timeline
+- Weekly and monthly written review notes
+- Contacts CSV export
+- Interactions CSV export
+- Follow-ups CSV export
+- Opportunities CSV export
+- Printable report layout
+- Ctrl/Cmd + K command palette
+- Alt-key navigation shortcuts
+- Skip-to-content accessibility link
+- Focus-visible keyboard states
+- Large-text accessibility preference
+- Reduced-motion accessibility preference
+- High-contrast accessibility preference
+- Local V8 release audit
+- V8 service-worker cache refresh
+- V8 state migration while preserving V1–V7 LocalStorage data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -139,8 +162,17 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - Vanilla JavaScript
 - LocalStorage
 
+## Release status
+Core local-first Personal CRM feature set is implemented through V8.
+
+## Future optional expansion
+- Multi-device cloud sync / login
+- Calendar integrations
+- External contacts provider integrations
+- Optional AI relationship assistant with explicit API-cost controls
+- Team / mentor sharing
+
 ## Roadmap
-- V8: Network map, advanced reports and final release polish
 
 ## Run
 Open `index.html` locally or deploy the repository with GitHub Pages.
