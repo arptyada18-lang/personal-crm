@@ -17,6 +17,7 @@ assert(html.includes('id="mainContent"'),"Main content target missing");
 ["BADGES","awardXP","levelInfo","evaluateBadges","evaluateGoals","openGoalModal","smartActions","dailyMission","growthView","earnedBadges","xpLog"].forEach(k=>assert(v6.includes(k),"V6 missing "+k));
 ["validateStateObject","repairStateObject","makeSnapshot","createManualSnapshot","restoreSnapshot","restoreLastGood","exportRecoveryBundle","dataHealth","installPersonalCRM"].forEach(k=>assert(v7.includes(k),"V7 missing "+k));
 ["networkMapSvg","networkMapView","reportMetrics","reportsView","openReviewModal","exportContactsCSV","exportInteractionsCSV","exportFollowupsCSV","exportOpportunitiesCSV","openCommandPalette","toggleAccessibility","releaseAudit"].forEach(k=>assert(v8.includes(k),"V8 missing "+k));
+["baseSaveV8","restoreSnapshotV8Base","restoreLastGoodV8Base","repairCRMDataV8Base"].forEach(k=>assert(v8.includes(k),"V8 migration hardening missing "+k));
 assert(sw.includes('personal-crm-v8'),"V8 cache name missing");
 assert(sw.includes('"./v8.js"'),"v8.js missing from offline cache");
 assert(manifest.includes('"display": "standalone"'),"Standalone PWA display missing");
