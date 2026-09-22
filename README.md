@@ -38,6 +38,20 @@ Advanced privacy-first personal relationship and networking CRM.
 - Automatic last-interaction recalculation after edits/deletes
 - V2 state migration without losing V1 LocalStorage data
 
+## V3 — implemented
+- Networking Kanban pipeline
+- Six relationship stages: New Contact → Connected → Conversation Started → Relationship Building → Opportunity → Strong Connection
+- Desktop drag-and-drop stage movement
+- Mobile-friendly stage dropdown fallback
+- Contact stage editing from the contact form
+- Stage controls on contact profiles
+- Stage labels on contact cards
+- Relationship funnel metrics
+- Stage distribution analytics
+- Recent pipeline movement history
+- Pipeline activity logging
+- V3 state migration while preserving V1/V2 LocalStorage data
+
 ## Privacy
 Personal contact data is stored only in the browser using LocalStorage. The repository contains application code only. Do not hardcode real phone numbers, emails, private notes or other contact data into the public repository.
 
@@ -53,7 +67,6 @@ Personal contact data is stored only in the browser using LocalStorage. The repo
 - LocalStorage
 
 ## Roadmap
-- V3: Networking Kanban pipeline
 - V4: Opportunities and important dates
 - V5: Analytics and networking heatmap
 - V6: Smart suggestions, XP and badges
