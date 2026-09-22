@@ -147,7 +147,7 @@
           target.stage=stageValue;
           target.stageUpdatedAt=new Date().toISOString();
           if(prior!==stageValue)logPipeline(target,prior,stageValue);
-          save();
+          save();render();
         }
       };
     },0);
